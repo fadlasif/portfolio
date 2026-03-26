@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Fadl Asif E — Software Engineer</title>
+  <meta name="description" content="Portfolio of Fadl Asif E — CS undergrad, AI & web developer from Kerala, India. Open to software engineering and freelance opportunities." />
+  <meta name="keywords" content="Fadl Asif E, Software Engineer, Web Developer, AI, Kerala, Python, React, Node.js" />
+  <meta name="author" content="Fadl Asif E" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fadl Asif E — Software Engineer" />
+  <meta property="og:description" content="Building efficient, scalable software — from AI-driven tools to full-stack web platforms." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fadlasif.dev" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fadl Asif E — Software Engineer" />
+  <meta name="twitter:description" content="Building efficient, scalable software with AI and web technologies." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════ -->
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Home">fadl<span class="accent">.</span>dev</a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+          <span class="theme-icon">☀️</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <nav class="mobile-nav">
+        <a href="#about"      class="mobile-link">About</a>
+        <a href="#projects"   class="mobile-link">Projects</a>
+        <a href="#skills"     class="mobile-link">Skills</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#contact"    class="mobile-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ════════════════════════════════
+         HERO
+    ════════════════════════════════ -->
+    <section id="hero" class="hero" aria-label="Introduction">
+      <!-- Background effects -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+
+          <div class="hero-badge" role="status">
+            <span class="badge-dot"></span>
+            Available for opportunities
+          </div>
+
+          <h1 class="hero-name">
+            Fadl<span class="accent"> Asif</span>
+          </h1>
+
+          <p class="hero-title" aria-live="polite">
+            <span id="typedText"></span><span class="cursor" aria-hidden="true">|</span>
+          </p>
+
+          <p class="hero-desc">
+            CS undergrad passionate about building efficient, scalable software —
+            from AI-driven optimisation tools to full-stack web platforms.
+            Based in Kerala, India.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact"  class="btn btn-outline">Contact Me</a>
+          </div>
+
+          <!-- Quick stats -->
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-div" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Certificates</span>
+            </div>
+            <div class="stat-div" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-num">2025</span>
+              <span class="stat-label">Graduate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <svg width="20" height="30" viewBox="0 0 20 30" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="1" y="1" width="18" height="28" rx="9"/>
+          <circle cx="10" cy="10" r="2.5" fill="currentColor" stroke="none">
+            <animate attributeName="cy" values="10;18;10" dur="2.2s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+        <span>scroll</span>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         ABOUT
+    ════════════════════════════════ -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <p class="section-label">// 01 — About</p>
+          <h2 class="section-title" id="about-heading">Who I Am</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio -->
+          <div class="about-bio fade-in">
+            <p>I'm <strong>Fadl Asif E</strong>, a Computer Science undergraduate at College of Engineering Vadakara
+              (APJ Abdul Kalam KTU), graduating in 2025. I specialise in building web and AI-driven applications
+              with a focus on efficiency and scalability.</p>
+
+            <p>With hands-on experience in both frontend and backend development — and a deep interest in machine
+              learning — I enjoy crafting systems that are not just functional but intelligent. From integrating Zoho
+              workflows to building CodeBERT-powered code optimisation tools, I love problems that sit at the
+              intersection of engineering and AI.</p>
+
+            <p>When I'm not coding, you'll find me at hackathons, exploring new frameworks, or sharpening my
+              understanding of data structures and algorithms.</p>
+
+            <div class="about-meta">
+              <div class="meta-item">
+                <span class="meta-icon">📍</span>
+                <span>Calicut, Kerala, India</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-icon">📧</span>
+                <a href="mailto:fadlasif123@gmail.com">fadlasif123@gmail.com</a>
+              </div>
+            </div>
+
+            <a href="Fadl_SEResume.pdf" download class="btn btn-outline resume-btn">
+              ⬇ Download Resume
+            </a>
+          </div>
+
+          <!-- Skill bars -->
+          <div class="about-bars fade-in" id="skillBars">
+            <div class="bar-group">
+              <h3 class="bar-group-label">Languages</h3>
+              <div class="bar-item" data-width="85">
+                <div class="bar-meta"><span>Python</span><span>85%</span></div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
+              </div>
+              <div class="bar-item" data-width="75">
+                <div class="bar-meta"><span>Java</span><span>75%</span></div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
+              </div>
+              <div class="bar-item" data-width="70">
+                <div class="bar-meta"><span>C</span><span>70%</span></div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
+              </div>
+            </div>
+
+            <div class="bar-group">
+              <h3 class="bar-group-label">Web</h3>
+              <div class="bar-item" data-width="88">
+                <div class="bar-meta"><span>HTML / CSS</span><span>88%</span></div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
+              </div>
+              <div class="bar-item" data-width="80">
+                <div class="bar-meta"><span>React / Node.js</span><span>80%</span></div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
+              </div>
+              <div class="bar-item" data-width="70">
+                <div class="bar-meta"><span>Laravel / PHP</span><span>70%</span></div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
+              </div>
+            </div>
+
+            <div class="bar-group">
+              <h3 class="bar-group-label">Database & Tools</h3>
+              <div class="bar-item" data-width="80">
+                <div class="bar-meta"><span>MySQL</span><span>80%</span></div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
+              </div>
+              <div class="bar-item" data-width="78">
+                <div class="bar-meta"><span>Git / Figma</span><span>78%</span></div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         PROJECTS
+    ════════════════════════════════ -->
+    <section id="projects" class="section section-alt" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <p class="section-label">// 02 — Projects</p>
+          <h2 class="section-title" id="projects-heading">Things I've Built</h2>
+        </div>
+
+        <!-- Cards rendered by JS from data.js -->
+        <div class="projects-grid" id="projectsGrid" role="list"></div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         SKILLS
+    ════════════════════════════════ -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <p class="section-label">// 03 — Skills</p>
+          <h2 class="section-title" id="skills-heading">Tech Toolkit</h2>
+        </div>
+
+        <!-- Cards rendered by JS from data.js -->
+        <div class="skills-grid" id="skillsGrid"></div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         EXPERIENCE
+    ════════════════════════════════ -->
+    <section id="experience" class="section section-alt" aria-labelledby="exp-heading">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <p class="section-label">// 04 — Experience</p>
+          <h2 class="section-title" id="exp-heading">Where I've Worked</h2>
+        </div>
+
+        <!-- Timeline rendered by JS from data.js -->
+        <div class="timeline" id="timeline" role="list"></div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         CERTIFICATES
+    ════════════════════════════════ -->
+    <section id="certificates" class="section" aria-labelledby="cert-heading">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <p class="section-label">// 05 — Certificates</p>
+          <h2 class="section-title" id="cert-heading">Credentials</h2>
+        </div>
+
+        <!-- Rendered by JS -->
+        <div class="certs-list" id="certsList"></div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         CONTACT
+    ════════════════════════════════ -->
+    <section id="contact" class="section section-alt" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="section-header fade-in">
+          <p class="section-label">// 06 — Contact</p>
+          <h2 class="section-title" id="contact-heading">Let's Talk</h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info side -->
+          <div class="contact-info fade-in">
+            <p class="contact-desc">
+              Whether you have a project idea, a job opportunity, or just want to say hello —
+              my inbox is always open. I'll get back to you as soon as I can.
+            </p>
+
+            <div class="social-links" id="socialLinks"></div>
+          </div>
+
+          <!-- Form side -->
+          <div class="contact-form-wrap fade-in">
+            <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+                <span class="field-error" id="nameError" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+                <span class="field-error" id="emailError" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+                <span class="field-error" id="messageError" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn">
+                <span class="btn-text">Send Message →</span>
+                <span class="btn-loading" aria-hidden="true">Sending…</span>
+              </button>
+
+              <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════
+       FOOTER
+  ════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        Designed &amp; built by <strong>Fadl Asif E</strong> · 2025 · Calicut, Kerala
+      </p>
+      <p class="footer-stack">HTML · CSS · Vanilla JS</p>
+    </div>
+  </footer>
+
+  <!-- Scripts — data first, then main -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
