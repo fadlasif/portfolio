@@ -38,7 +38,7 @@ const PORTFOLIO_DATA = {
       name:  "EFFICODE — ML-Based Code Optimization Tool",
       desc:  "An AI-powered tool that analyses and optimises complex Python code using data structures and algorithms. Combines rule-based pattern detection, Random Forest for complexity analysis, CodeBERT for code restructuring, and T5 for natural-language explanations.",
       tags:  ["Python", "CodeBERT", "T5", "Random Forest", "ML", "DSA"],
-      demo:  "https://github.com/fadlasif",        // Replace with live URL
+      demo:  null,        // Replace with live URL
       github: "https://github.com/fadlasif",
     },
     {
@@ -46,16 +46,16 @@ const PORTFOLIO_DATA = {
       name:  "College Blogging Website",
       desc:  "A full-stack web platform enabling students to post about college events and share information in real time. Includes a dynamic commenting system for interactive peer discussions.",
       tags:  ["React", "Node.js", "HTML", "CSS", "Full-Stack"],
-      demo:  "https://github.com/fadlasif",
+      demo:  null,
       github: "https://github.com/fadlasif",
     },
     {
       emoji: "⚙️",
-      name:  "Billing & Packaging Automation",
-      desc:  "Functional software modules for billing and packaging at Tertius Life Sciences. Integrated Zoho applications with Google Sheets to automate data transfer and eliminate manual data entry.",
-      tags:  ["Zoho", "Google Sheets", "Automation", "Workflow"],
+      name:  "AutoParts Hub – E-commerce Platform",
+      desc:  "A modern e-commerce platform for browsing and purchasing automotive parts with ease. Features smart search, categorized listings, and a smooth checkout experience. Ensures fast delivery, secure payments, and reliable OEM-quality products with hassle-free returns.",
+      tags:  ["HTML", "CSS", "React", "MongoDB","Responsive Design"],
       demo:  null,       // null hides the Live Demo button
-      github: null,
+      github: "https://github.com/fadlasif/spareparts_project",
     },
   ],
 
@@ -89,6 +89,17 @@ const PORTFOLIO_DATA = {
 
   /* ── Experience / Education timeline ─────────────── */
   timeline: [
+
+    {
+      date:    "Mar 2026 - Present",
+      title:   "Software Engineer Intern",
+      org:     "Appletlogic",
+      points: [
+        "Developed dynamic and responsive user interfaces using React.js and modern JavaScript (ES6+).",
+        "Designed and optimized MongoDB schemas for efficient data storage and retrieval.",
+      ],
+    },
+
     {
       date:    "Nov 2025 – Dec 2025",
       title:   "Technical Executive Intern",
@@ -96,16 +107,6 @@ const PORTFOLIO_DATA = {
       points: [
         "Integrated Zoho applications with Google Sheets to automate data transfer and streamline billing and packaging workflows.",
         "Designed and developed functional modules for the company's billing and packaging software.",
-      ],
-    },
-    {
-      date:    "2021 – 2025",
-      title:   "B.Tech — Computer Science & Engineering",
-      org:     "College of Engineering Vadakara · APJ Abdul Kalam KTU",
-      points: [
-        "Built EFFICODE — an AI-powered code optimisation tool using CodeBERT, Random Forest, and T5.",
-        "Developed a full-stack college blogging platform with React and Node.js.",
-        "Participated in HackFolio Hackathon, IBM SQL certification, and a 3-day Node.js workshop.",
       ],
     },
   ],
